@@ -26,7 +26,7 @@ def test_validar_documento():
     assert Exercicios.validar_documento("123.456.789-XX") is False
     assert Exercicios.validar_documento("") is False
 
-#Exercicio 4
+#Exercicio 04
 @patch('Exercicios.gerar_codigo')
 def test_criar_identificacao(mock_gerar_codigo):
     mock_gerar_codigo.return_value = "USR-1234"
